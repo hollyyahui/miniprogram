@@ -1,0 +1,12 @@
+<template name="list">
+  <navigator url="{{url}}">
+    <view class="items">
+      <image class="poster" src="{{images}}"></image>
+      <view class="meta">
+        <text class="title">{{title}}</text>
+        <view class="content"><text>{{content}} </text></view>
+        <view class="time"><text>{{time}}</text></view>
+      </view>
+    </view>
+  </navigator>
+</template>

@@ -1,0 +1,31 @@
+<import src="../../template/nav" />
+<view class="container">
+	<view class="container-body container-gray">
+		<view class="group">
+			<view class="group-title">本周话题：</view>
+			<view class="group-header">
+      你被问过的最愚蠢的技术问题是什么？</view>
+			<view class="group-body">
+				<textarea placeholder="可输入1000字" maxlength="1000"></textarea>
+			</view>
+			<view class="group-header">上传图片</view>
+			<view class="group-body">
+				<view class="img-upload">
+					<view class="img-add" bindtap="chooseImage"></view>
+					<view class="img-item" bindlongtap="editImage" wx:for="{{uploadimgs}}" wx:key="{{index}}">
+						<icon type="clear" size="20" color="red" style="display:{{editable?'block':'none'}}" bindtap="deleteImg" data-index="{{index}}"/>
+						<image src="{{item}}" mode="aspectFill"></image>
+					</view>
+				</view>
+			</view>
+		</view>
+		<view class="btn-submit">
+			<button class="btn-block btn-green" bindtap="questionSubmit">确认提交</button>
+		</view>
+	</view>
+</view>
+<view class="flex fix_nav_wp">
+  <block wx:for="{{navData}}">
+      <template is="nav" data="{{...item}}"/>
+  </block>
+</view> 

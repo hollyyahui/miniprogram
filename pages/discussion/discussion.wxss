@@ -1,0 +1,68 @@
+.group{
+	display: block;
+	width: 100%;
+}
+.group-title, .group-header{
+	line-height: 100rpx;
+	display: flex;
+	padding: 0 20rpx;
+	background: #f9f9f9;
+  font-size: 13px;
+}
+.group-title{
+  font-weight: 700;
+  font-size: 15px;
+}
+.group-body{
+	background: #fff;
+	border-top: 1rpx solid #ddd;
+	border-bottom: 1rpx solid #ddd;
+}
+textarea{
+	width: 100%;
+	padding: 20rpx;
+	box-sizing: border-box;
+}
+.group-body .input-list{
+	margin: 0;
+	border: none;
+}
+.img-upload{
+	padding: 20rpx;
+	font-size: 0;
+	overflow: hidden;
+}
+.img-upload .img-item,
+.img-upload .img-add{
+	width: 100rpx;
+	height: 100rpx;
+	float: left;
+	margin: 10rpx;
+	border: 1rpx solid transparent;
+}
+.img-upload .img-add{
+	border: 1rpx dashed #ddd;
+}
+.img-upload .img-item image{
+	width: 100rpx;
+	height: 100rpx;
+}
+.img-upload .img-item{
+	position: relative;
+}
+.img-upload .img-item icon{
+	position: absolute;
+	right: -12rpx;
+	top: -12rpx;
+}
+.btn-submit{
+	padding: 20rpx;
+}
+.btn-block{
+	width: 100%;
+	line-height: 88rpx;
+}
+.btn-green{
+	background: #46D781;
+	color: #fff;
+}

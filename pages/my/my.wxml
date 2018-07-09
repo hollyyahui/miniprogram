@@ -1,0 +1,13 @@
+<import src="../../template/nav" />
+<view class="container">
+  <view class="user" bindtap="getUserInfo">
+    <image class="user-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"/>
+    <text class="user-nickname">{{userInfo.nickName}}</text>
+    <text class="user-nickname">{{userInfo.city}}, {{userInfo.province}}</text>
+  </view>
+</view>
+  <view class="flex fix_nav_wp">
+  <block wx:for="{{navData}}">
+      <template is="nav" data="{{...item}}"/>
+  </block>
+  </view> 
